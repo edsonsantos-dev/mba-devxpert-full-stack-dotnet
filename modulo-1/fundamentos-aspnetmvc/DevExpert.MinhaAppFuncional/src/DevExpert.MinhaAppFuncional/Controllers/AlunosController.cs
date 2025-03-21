@@ -1,6 +1,8 @@
-﻿using DevExpert.MinhaAppFuncional.Data;
+﻿using DevExpert.MinhaAppFuncional.Areas.Identity.Pages.Account;
+using DevExpert.MinhaAppFuncional.Data;
 using DevExpert.MinhaAppFuncional.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -11,10 +13,11 @@ namespace DevExpert.MinhaAppFuncional.Controllers;
 public class AlunosController : Controller
 {
     private readonly ApplicationDbContext _context;
-
+    
     public AlunosController(ApplicationDbContext context)
     {
         _context = context;
+
     }
 
     [AllowAnonymous]
@@ -159,5 +162,21 @@ public class AlunosController : Controller
     private bool AlunoExists(int id)
     {
         return (_context.Alunos?.Any(e => e.Id == id)).GetValueOrDefault();
+    }
+
+    public async Task CreateUser(IdentityUser user)
+    {
+        var aluno = new Aluno
+        {
+            Nome = user.UserName,
+            Email = user.Email,
+            EmailConfirmacao = user.Email,
+            DataNascimento = DateTime.Now,
+            Avaliacao = 0,
+            Ativo = true
+        };
+        
+        await _context.AddAsync(aluno);
+        await _context.SaveChangesAsync();
     }
 }
