@@ -16,6 +16,8 @@ public class Product : ModifiableEntity
     public Category? Category { get; set; }
     public Guid SellerId { get; set; }
     public Seller? Seller { get; set; }
+    
+    public Product() { }
 
     public Product(
         string? name,

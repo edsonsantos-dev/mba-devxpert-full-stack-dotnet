@@ -11,6 +11,8 @@ public class Category : ModifiableEntity
 
     public List<Product> Products { get; set; } = [];
 
+    public Category() { }
+
     public Category(
         string? name,
         string? description,
