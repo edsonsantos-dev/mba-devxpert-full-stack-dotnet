@@ -1,6 +1,6 @@
-using DevExpert.Marketplace.Business.Interfaces;
+using DevExpert.Marketplace.Core.Interfaces;
 
-namespace DevExpert.Marketplace.Business.Entities.AuditableEntities;
+namespace DevExpert.Marketplace.Core.Entities.AuditableEntities;
 
 public abstract class Entity
 {

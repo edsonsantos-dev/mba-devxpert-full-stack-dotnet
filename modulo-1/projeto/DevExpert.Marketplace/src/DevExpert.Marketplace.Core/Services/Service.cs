@@ -1,9 +1,9 @@
-using DevExpert.Marketplace.Business.Entities.AuditableEntities;
-using DevExpert.Marketplace.Business.Interfaces;
-using DevExpert.Marketplace.Business.Interfaces.Repositories;
-using DevExpert.Marketplace.Business.Interfaces.Services;
+using DevExpert.Marketplace.Core.Entities.AuditableEntities;
+using DevExpert.Marketplace.Core.Interfaces;
+using DevExpert.Marketplace.Core.Interfaces.Repositories;
+using DevExpert.Marketplace.Core.Interfaces.Services;
 
-namespace DevExpert.Marketplace.Business.Services;
+namespace DevExpert.Marketplace.Core.Services;
 
 public class Service<TEntity>(
     IRepository<TEntity> repository,

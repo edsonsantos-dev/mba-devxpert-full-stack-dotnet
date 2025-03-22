@@ -1,6 +1,6 @@
 using System.Linq.Expressions;
-using DevExpert.Marketplace.Business.Entities.AuditableEntities;
-using DevExpert.Marketplace.Business.Interfaces.Repositories;
+using DevExpert.Marketplace.Core.Entities.AuditableEntities;
+using DevExpert.Marketplace.Core.Interfaces.Repositories;
 using DevExpert.Marketplace.Data.Context;
 using Microsoft.EntityFrameworkCore;
 

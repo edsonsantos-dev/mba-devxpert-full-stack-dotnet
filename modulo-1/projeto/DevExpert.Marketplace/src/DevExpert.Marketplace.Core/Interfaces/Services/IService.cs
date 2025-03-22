@@ -1,6 +1,6 @@
-using DevExpert.Marketplace.Business.Entities.AuditableEntities;
+using DevExpert.Marketplace.Core.Entities.AuditableEntities;
 
-namespace DevExpert.Marketplace.Business.Interfaces.Services;
+namespace DevExpert.Marketplace.Core.Interfaces.Services;
 
 public interface IService<TEntity> : IDisposable where TEntity : Entity
 {

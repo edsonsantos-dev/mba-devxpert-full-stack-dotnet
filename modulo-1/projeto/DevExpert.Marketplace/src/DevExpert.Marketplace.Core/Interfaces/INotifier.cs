@@ -1,6 +1,6 @@
-using DevExpert.Marketplace.Business.Notifications;
+using DevExpert.Marketplace.Core.Notifications;
 
-namespace DevExpert.Marketplace.Business.Interfaces;
+namespace DevExpert.Marketplace.Core.Interfaces;
 
 public interface INotifier
 {

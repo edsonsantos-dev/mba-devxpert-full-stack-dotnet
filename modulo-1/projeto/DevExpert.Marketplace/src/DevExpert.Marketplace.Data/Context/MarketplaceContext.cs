@@ -1,5 +1,5 @@
-using DevExpert.Marketplace.Business.Entities;
-using DevExpert.Marketplace.Business.Interfaces;
+using DevExpert.Marketplace.Core.Entities;
+using DevExpert.Marketplace.Core.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
 namespace DevExpert.Marketplace.Data.Context;

@@ -1,6 +1,6 @@
-using DevExpert.Marketplace.Business.Entities;
+using DevExpert.Marketplace.Core.Entities;
 
-namespace DevExpert.Marketplace.Business.Interfaces.Services;
+namespace DevExpert.Marketplace.Core.Interfaces.Services;
 
 public interface IProductService : IService<Product>
 {

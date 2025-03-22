@@ -1,8 +1,8 @@
-using DevExpert.Marketplace.Business.Entities.AuditableEntities;
-using DevExpert.Marketplace.Business.Interfaces;
+using DevExpert.Marketplace.Core.Interfaces;
+using DevExpert.Marketplace.Core.Entities.AuditableEntities;
 using DevExpert.Marketplace.Shared.Extensions;
 
-namespace DevExpert.Marketplace.Business.Entities;
+namespace DevExpert.Marketplace.Core.Entities;
 
 public class Product : ModifiableEntity
 {

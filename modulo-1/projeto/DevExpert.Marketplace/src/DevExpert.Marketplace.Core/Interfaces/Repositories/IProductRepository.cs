@@ -1,6 +1,6 @@
-using DevExpert.Marketplace.Business.Entities;
+using DevExpert.Marketplace.Core.Entities;
 
-namespace DevExpert.Marketplace.Business.Interfaces.Repositories;
+namespace DevExpert.Marketplace.Core.Interfaces.Repositories;
 
 public interface IProductRepository : IRepository<Product>
 {

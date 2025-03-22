@@ -1,4 +1,4 @@
-namespace DevExpert.Marketplace.Business.Interfaces;
+namespace DevExpert.Marketplace.Core.Interfaces;
 
 public interface IUserContext
 {

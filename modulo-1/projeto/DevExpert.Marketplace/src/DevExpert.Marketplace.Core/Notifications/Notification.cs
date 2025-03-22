@@ -1,4 +1,4 @@
-namespace DevExpert.Marketplace.Business.Notifications;
+namespace DevExpert.Marketplace.Core.Notifications;
 
 public class Notification
 {

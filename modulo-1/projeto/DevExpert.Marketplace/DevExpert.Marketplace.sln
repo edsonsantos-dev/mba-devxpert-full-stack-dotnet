@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevExpert.Marketplace.Business", "src\DevExpert.Marketplace.Business\DevExpert.Marketplace.Business.csproj", "{CFE98CEB-07E0-4F05-8AA5-443FA5F016A8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevExpert.Marketplace.Core", "src\DevExpert.Marketplace.Core\DevExpert.Marketplace.Core.csproj", "{CFE98CEB-07E0-4F05-8AA5-443FA5F016A8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DevExpert.Marketplace.Data", "src\DevExpert.Marketplace.Data\DevExpert.Marketplace.Data.csproj", "{7F253A4A-C92D-41CE-B365-629AF922F661}"
 EndProject

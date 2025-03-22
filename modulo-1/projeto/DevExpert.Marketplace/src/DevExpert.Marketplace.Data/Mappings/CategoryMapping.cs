@@ -1,4 +1,4 @@
-using DevExpert.Marketplace.Business.Entities;
+using DevExpert.Marketplace.Core.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

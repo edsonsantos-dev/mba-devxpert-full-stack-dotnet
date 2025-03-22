@@ -13,7 +13,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\DevExpert.Marketplace.Business\DevExpert.Marketplace.Business.csproj" />
+      <ProjectReference Include="..\DevExpert.Marketplace.Core\DevExpert.Marketplace.Core.csproj" />
     </ItemGroup>
 
 </Project>

@@ -1,7 +1,7 @@
 using System.Linq.Expressions;
-using DevExpert.Marketplace.Business.Entities.AuditableEntities;
+using DevExpert.Marketplace.Core.Entities.AuditableEntities;
 
-namespace DevExpert.Marketplace.Business.Interfaces.Repositories;
+namespace DevExpert.Marketplace.Core.Interfaces.Repositories;
 
 public interface IRepository<TEntity> : IDisposable where TEntity : Entity 
 {

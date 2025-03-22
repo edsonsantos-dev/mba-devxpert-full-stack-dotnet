@@ -1,8 +1,8 @@
-using DevExpert.Marketplace.Business.Entities;
-using DevExpert.Marketplace.Business.Interfaces;
-using DevExpert.Marketplace.Business.Interfaces.Repositories;
+using DevExpert.Marketplace.Core.Entities;
+using DevExpert.Marketplace.Core.Interfaces;
+using DevExpert.Marketplace.Core.Interfaces.Repositories;
 
-namespace DevExpert.Marketplace.Business.Services;
+namespace DevExpert.Marketplace.Core.Services;
 
 public class CategoryService(ICategoryRepository repository, INotifier notifier)
     : Service<Category>(repository, notifier)
