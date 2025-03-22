@@ -6,6 +6,7 @@ namespace DevExpert.Marketplace.Core.Entities;
 public class Image : AddableEntity
 {
     public int DisplayPosition { get; set; }
+    public string? Path { get; set; }
     public bool IsCover => DisplayPosition == 1;
 
     public Guid ProductId { get; set; }
@@ -15,10 +16,12 @@ public class Image : AddableEntity
 
     public Image(
         int displayPosition,
+        string? path,
         Guid productId,
         INotifier notifier)
     {
         DisplayPosition = displayPosition;
+        Path = path;
         ProductId = productId;
         
         Validation(notifier);
