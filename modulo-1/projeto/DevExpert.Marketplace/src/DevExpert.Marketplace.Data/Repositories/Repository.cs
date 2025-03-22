@@ -65,6 +65,6 @@ public abstract class Repository<TEntity> : IRepository<TEntity> where TEntity :
 
     public void Dispose()
     {
-        Context.Dispose();
+        Context?.Dispose();
     }
 }
