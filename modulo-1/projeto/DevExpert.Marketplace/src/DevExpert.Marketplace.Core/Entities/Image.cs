@@ -1,5 +1,7 @@
 using DevExpert.Marketplace.Core.Interfaces;
 using DevExpert.Marketplace.Core.Entities.AuditableEntities;
+using DevExpert.Marketplace.Shared.Extensions;
+using Microsoft.AspNetCore.Http;
 
 namespace DevExpert.Marketplace.Core.Entities;
 
@@ -31,5 +33,14 @@ public class Image : AddableEntity
     {
         if (ProductId == Guid.Empty)
             notifier.AddNotification(new($"Product is required."));
+        
+        if (Path.IsNullOrEmpty())
+            notifier.AddNotification(new($"Path is required."));
+    }
+
+    public async Task SaveAsync(IFormFile file)
+    {
+        using var stream = new FileStream(Path!, FileMode.Create);
+        await file.CopyToAsync(stream);
     }
 }

@@ -10,4 +10,10 @@
       <ProjectReference Include="..\DevExpert.Marketplace.Shared\DevExpert.Marketplace.Shared.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Reference Include="Microsoft.AspNetCore.Http.Features">
+        <HintPath>..\..\..\..\..\..\..\..\..\..\home\edson_santos\.nuget\packages\microsoft.aspnetcore.http.features\2.3.0\lib\netstandard2.0\Microsoft.AspNetCore.Http.Features.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
 </Project>
