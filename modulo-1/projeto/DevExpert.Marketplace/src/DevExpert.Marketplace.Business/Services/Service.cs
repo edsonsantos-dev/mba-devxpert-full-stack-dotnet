@@ -25,6 +25,11 @@ public class Service<TEntity>(
         return await repository.GetByIdAsync(id);
     }
 
+    public virtual async Task<List<TEntity>> GetAllAsync()
+    {
+        return await repository.GetAllAsync();
+    }
+
     public virtual async Task<TEntity?> UpdateAsync(TEntity entity)
     {
         if (notifier.HaveNotification())
